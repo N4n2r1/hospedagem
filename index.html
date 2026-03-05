@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de hospedagem</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Hospedagem</h1>
+            <div>
+            <label for="criancas">Digite o número de crianças (até 13 anos)</label>
+            <input type="text" id="criancas">
+        </div>
+        <br>
+        <div>
+            <label for="adultos">Digite o número de adultos</label>
+            <input type="text" id="adultos">
+        </div>
+        <br>
+        <div>
+            <label for="dia">Em que dia você irá se hospedar? <br>
+            1 - Dias de semana <br>
+            2 - Fim de semana <br>
+            3 - Feriados</label>
+            <input type="text" id="dia">
+        </div>
+        <br>
+        <div>
+            <label for="dias">Digite quantos dias vai se hospoedar</label>
+            <input type="text" id="dias">
+        </div>
+        <br>
+        <div>
+            <label for="almoco">Você irá almoçar no local? <br>
+            1 - Sim <br>
+            2 - Não</label>
+            <input type="text" id="almoco" onkeypress="calcularEnter(event)">
+        </div>
+        <br>
+        <button onclick="calcular()">Calcular</button>
+        <br>
+        <p id="resultado">Resultado</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
